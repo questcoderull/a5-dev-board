@@ -25,6 +25,18 @@ document
     const button = document.getElementById("fix-mobile-btn");
     button.disabled = true;
 
+    // sokol button disabled ki na seta check kortesi.
+    if (
+      document.getElementById("fix-mobile-btn").disabled &&
+      document.getElementById("dark-mode-btn").disabled &&
+      document.getElementById("home-page-btn").disabled &&
+      document.getElementById("new-imoge-btn").disabled &&
+      document.getElementById("api-btn").disabled &&
+      document.getElementById("job-searching-btn").disabled
+    ) {
+      alert("Congrates!!! You have complated all the current tasks");
+    }
+
     // history te messege add kortesi.
     const subject = document.getElementById("subject-title1").innerText;
 
@@ -79,6 +91,17 @@ document
     const button = document.getElementById("dark-mode-btn");
     button.disabled = true;
 
+    // sokol button disabled ki na seta check kortesi.
+    if (
+      document.getElementById("fix-mobile-btn").disabled &&
+      document.getElementById("dark-mode-btn").disabled &&
+      document.getElementById("home-page-btn").disabled &&
+      document.getElementById("new-imoge-btn").disabled &&
+      document.getElementById("api-btn").disabled &&
+      document.getElementById("job-searching-btn").disabled
+    ) {
+      alert("Congrates!!! You have complated all the current tasks");
+    }
     // history te messege add kortesi.
     const subject = document.getElementById("subject-title2").innerText;
 
@@ -132,6 +155,18 @@ document
     // btn ke disable kora
     const button = document.getElementById("home-page-btn");
     button.disabled = true;
+
+    // sokol button disabled ki na seta check kortesi.
+    if (
+      document.getElementById("fix-mobile-btn").disabled &&
+      document.getElementById("dark-mode-btn").disabled &&
+      document.getElementById("home-page-btn").disabled &&
+      document.getElementById("new-imoge-btn").disabled &&
+      document.getElementById("api-btn").disabled &&
+      document.getElementById("job-searching-btn").disabled
+    ) {
+      alert("Congrates!!! You have complated all the current tasks");
+    }
 
     // history te messege add kortesi.
     const subject = document.getElementById("subject-title3").innerText;
@@ -187,6 +222,17 @@ document
     const button = document.getElementById("new-imoge-btn");
     button.disabled = true;
 
+    // sokol button disabled ki na seta check kortesi.
+    if (
+      document.getElementById("fix-mobile-btn").disabled &&
+      document.getElementById("dark-mode-btn").disabled &&
+      document.getElementById("home-page-btn").disabled &&
+      document.getElementById("new-imoge-btn").disabled &&
+      document.getElementById("api-btn").disabled &&
+      document.getElementById("job-searching-btn").disabled
+    ) {
+      alert("Congrates!!! You have complated all the current tasks");
+    }
     // history te messege add kortesi.
     const subject = document.getElementById("subject-title4").innerText;
 
@@ -239,6 +285,18 @@ document.getElementById("api-btn").addEventListener("click", function (event) {
   const button = document.getElementById("api-btn");
   button.disabled = true;
 
+  // sokol button disabled ki na seta check kortesi.
+  if (
+    document.getElementById("fix-mobile-btn").disabled &&
+    document.getElementById("dark-mode-btn").disabled &&
+    document.getElementById("home-page-btn").disabled &&
+    document.getElementById("new-imoge-btn").disabled &&
+    document.getElementById("api-btn").disabled &&
+    document.getElementById("job-searching-btn").disabled
+  ) {
+    alert("Congrates!!! You have complated all the current tasks");
+  }
+
   // history te messege add kortesi.
   const subject = document.getElementById("subject-title5").innerText;
 
@@ -268,7 +326,7 @@ document.getElementById("api-btn").addEventListener("click", function (event) {
 // 6 number card.
 // 6 number card.
 document
-  .getElementById("job-searching deagede")
+  .getElementById("job-searching-btn")
   .addEventListener("click", function (event) {
     event.preventDefault();
     const taskNumber = document.getElementById("task-number").innerText;
@@ -288,11 +346,22 @@ document
 
     //   alert dekanu
     alert("Board updated succesfully");
-    alert("Congrates!!! You have complated all the current tasks");
 
     // btn ke disable kora
-    const button = document.getElementById("job-searching deagede");
+    const button = document.getElementById("job-searching-btn");
     button.disabled = true;
+
+    // sokol button disabled ki na seta check kortesi.
+    if (
+      document.getElementById("fix-mobile-btn").disabled &&
+      document.getElementById("dark-mode-btn").disabled &&
+      document.getElementById("home-page-btn").disabled &&
+      document.getElementById("new-imoge-btn").disabled &&
+      document.getElementById("api-btn").disabled &&
+      document.getElementById("job-searching-btn").disabled
+    ) {
+      alert("Congrates!!! You have complated all the current tasks");
+    }
 
     // history te messege add kortesi.
     const subject = document.getElementById("subject-title6").innerText;
