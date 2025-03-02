@@ -288,7 +288,7 @@ document
 
     //   alert dekanu
     alert("Board updated succesfully");
-    alert("sogula finsih kore felso.");
+    alert("Congrates!!! You have complated all the current tasks");
 
     // btn ke disable kora
     const button = document.getElementById("job-searching deagede");
@@ -331,3 +331,49 @@ document
       p.remove();
     });
   });
+
+// current date and time ta ber korar chest kortechi.
+
+const today = new Date();
+const day = today.toLocaleString("en-US", { weekday: "short" });
+const date = today.getDate();
+const month = today.toLocaleString("en-US", { month: "short" });
+const year = today.getFullYear();
+
+// id er maddome div e set kore ditechi.
+document.getElementById("current-day").innerText = `${day},`;
+document.getElementById(
+  "current-month-date-year"
+).innerText = `${month} ${date}, ${year}`;
+
+// discober container
+document
+  .getElementById("discover-contaner")
+  .addEventListener("click", function () {
+    window.location.href = "blog.html";
+  });
+
+// bg color randomlly change korar try korteci.
+document.getElementById("color-changer").addEventListener("click", function () {
+  const colors = [
+    "red",
+    "blue",
+    "yellow",
+    "green",
+    "purple",
+    "pink",
+    "teal",
+    "cyan",
+    "orange",
+  ];
+  const randomColor = Math.floor(Math.random() * colors.length);
+  const changedColor = `bg-${colors[randomColor]}-300`;
+
+  document.body.classList.forEach((cls) => {
+    if (cls.startsWith("bg-")) {
+      document.body.classList.remove(cls);
+    }
+  });
+
+  document.body.classList.add(changedColor);
+});

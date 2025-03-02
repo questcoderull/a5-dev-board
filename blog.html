@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+
+    <!-- link daisy ui
+      -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="pt-6 bg-blue-50">
+    <section class="w-11/12 mx-auto">
+      <header
+        class="flex justify-between bg-white p-6 rounded-2xl mb-5 shadow-lg"
+      >
+        <!-- left side logo -->
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="" />
+          <p class="text-blue-950 text-3xl">
+            Dev<span class="font-bold">Board</span>
+          </p>
+        </div>
+
+        <!-- right side -->
+        <div>
+          <button class="btn btn-primary">
+            <a href="index.html">Back to Desk</a>
+          </button>
+        </div>
+      </header>
+      <!-- header section ends -->
+
+      <!-- blog main section -->
+      <section>
+        <h1 class="text-blue-950 font-bold text-3xl text-center mb-5">Blogs</h1>
+
+        <!-- qestion container -->
+
+        <!-- 1nd container -->
+        <div class="bg-white p-6 rounded-2xl mb-5 shadow-md">
+          <h2 class="text-black text-2xl font-bold pb-3">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <hr class="border-t-2 border-dashed border-gray-200 pb-3" />
+          <p>
+            we can select any element by id name or class name or tag name. like
+            if we want to select any id ,then we will use getElementById() this
+            function. and getElementsByClassName for selecting by class names.
+            and getElementsByTagName() for selcting by tag name. and there are
+            another ways availble in js like querySelector()
+            ,querySelectorAll(), and we can use parentNode or children.
+          </p>
+        </div>
+        <!-- 2nd container -->
+        <div class="bg-white p-6 rounded-2xl mb-5 shadow-md">
+          <h2 class="text-black text-2xl font-bold pb-3">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <hr class="border-t-2 border-dashed border-gray-200 pb-3" />
+          <p>
+            Difference between innerHTML nad innerText is , innerHTML is used
+            for getting or changing ar adding inside html like p tag h1 tag atc.
+            and innerText is used for getting inside texts of any html tag, like
+            what is written inside of a p tag or in a h1 tag atc. and
+            textContent is like innerText. but it doesn't support css styles.
+          </p>
+        </div>
+        <!-- 3nd container -->
+        <div class="bg-white p-6 rounded-2xl mb-5 shadow-md">
+          <h2 class="text-black text-2xl font-bold pb-3">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <hr class="border-t-2 border-dashed border-gray-200 pb-3" />
+          <p>
+            Event delegation is when we add one event listener to a parent
+            element instead of many listeners to child elements. It use event
+            bubbling, where events move from the target element to the parent.
+            This way, we can handle events for multiple child elements with one
+            listener, making the code simpler and maybe faster.
+          </p>
+        </div>
+
+        <!-- 4th container -->
+        <div class="bg-white p-6 rounded-2xl mb-5 shadow-md">
+          <h2 class="text-black text-2xl font-bold pb-3">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <hr class="border-t-2 border-dashed border-gray-200 pb-3" />
+          <p>
+            Event bubbling is , an event start from the target element i (mean
+            on which element we clicked) to it's every parents elements . it
+            keeps bubbling up one by one untile it reach the root element of the
+            document.
+          </p>
+        </div>
+        <!-- 5th container -->
+        <div class="bg-white p-6 rounded-2xl mb-5 shadow-md">
+          <h2 class="text-black text-2xl font-bold pb-3">
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <hr class="border-t-2 border-dashed border-gray-200 pb-3" />
+          <p>
+            We use document.createElement() to create an element in js. and then
+            for adding this, we use appendChild() on parent element. and we can
+            use removeChild() to remone the child. and we use it on parent
+            element too.
+          </p>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
