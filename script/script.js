@@ -44,7 +44,7 @@ document
     const p = document.createElement("p");
     p.innerHTML = `
     <p class="bg-blue-50 p-1 rounded mb-3">
-            You have Complete The Task ${subject} at ${formattedTime}
+            You have Completed The Task ${subject} at ${formattedTime}
           </p>
     `;
 
@@ -98,7 +98,7 @@ document
     const p = document.createElement("p");
     p.innerHTML = `
     <p class="bg-blue-50 p-1 rounded mb-3">
-            You have Complete The Task ${subject} at ${formattedTime}
+            You have Completed The Task ${subject} at ${formattedTime}
           </p>
     `;
 
@@ -152,7 +152,7 @@ document
     const p = document.createElement("p");
     p.innerHTML = `
     <p class="bg-blue-50 p-1 rounded mb-3">
-            You have Complete The Task ${subject} at ${formattedTime}
+            You have Completed The Task ${subject} at ${formattedTime}
           </p>
     `;
 
